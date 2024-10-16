@@ -14,11 +14,13 @@ function calculateSquare(value) {
 }
 
 // TODO: FIX reciprocal function
-function calculateReciprocal() {
+function calculateReciprocal(value) {
     // Hint: Reciprocal is 1/x
     // return the square root of the value
-    return 1* value;
-
+    if (value === 0) {
+        return 0;
+    }
+    return 1 / value;
 }
 
 // TODO: Implement natural log function
@@ -39,6 +41,7 @@ function cosine(value) {
 // TODO: Implement tangent function
 function tangent(value) {
     // return the tangent of the value
+    return Math.tan(value);
 }
 
 
