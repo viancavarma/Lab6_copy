@@ -29,11 +29,15 @@ function naturalLog(value) {
 // TODO: Implement sine function
 function sine(value) {
     // return the sine of the value
+    const rad = (value*Math.PI)/180;
+    return Math.sin(rad);
 }
 
 // TODO: Implement cosine function
 function cosine(value) {
     // return the cosine of the value
+    const rad = (value*Math.PI)/180;
+    return Math.cos(rad);
 }
 
 // TODO: Implement tangent function
