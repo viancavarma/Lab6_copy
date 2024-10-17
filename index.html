@@ -70,6 +70,26 @@
     <button onclick="appendToDisplay('.')">.</button>
 
      <!-- TODO: Add extra function operations -->
+    <script>
+        document.addEventListener('keydown', () => {
+            let keyPressed = event.key;
+            if(keyPressed.replace(/[^0-9]/g, '') != ''){
+                appendToDisplay(event.key);
+            }
+            if(keyPressed === "Backspace"){
+                deleteLast();
+            }
+
+            if(keyPressed === "+" || keyPressed === "-" || keyPressed === "/" || keyPressed === "*" || keyPressed === "."){
+                appendToDisplay(event.key);
+            }
+
+            if(keyPressed === "Enter"){
+                calculateResult();
+            }
+        })
+    </script>
+    
 </div>
 
 <script src="calculator.js"></script>
