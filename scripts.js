@@ -49,4 +49,17 @@ function runReciprocal() {
 
 // TODO: Implement run your functions here
 
+function runSin() {
+    const v = sine(display.value);
+    display.value = v;
+}
 
+function runCos(){
+    const v = cosine(display.value);
+    display.value = v;
+}
+
+function runTan(){
+    const v = tangent(display.value);
+    display.value = v;
+}
