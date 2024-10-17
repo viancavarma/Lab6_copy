@@ -14,17 +14,23 @@
             margin: 0 auto;
             padding: 20px;
             border: 2px solid #000;
+            background-color: grey;
+            border-radius: 20px;
         }
         button {
             width: 60px;
             height: 40px;
             font-size: 18px;
+            background-color: lightgrey;
+            text-align: center;
         }
         input {
             width: 360px;
             height: 40px;
             text-align: right;
             font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgba(127, 195, 127, 0.379);
         }
     </style>
 </head>
@@ -48,6 +54,11 @@
     <button onclick="appendToDisplay('/')">/</button>
     <button onclick="appendToDisplay('*')">*</button><br><br>
         <!-- Add your features here -->
+    <button onclick="runSin()">sin</button>
+    <button onclick="runCos()">cos</button>
+    <button onclick="runTan()">tan</button>
+    <button onclick="runSquare()">^2</button>
+    <button onclick="runReciprocal()">1/x</button><br><br>
 
 
     
